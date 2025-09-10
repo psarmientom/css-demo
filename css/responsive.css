@@ -1,0 +1,18 @@
+.main{
+    width:60%;
+    margin:3rem auto;
+    background-color: aqua;
+    padding:2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .main{
+        background-color: black;
+        color:white;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        background-color: red;
+    }
+}

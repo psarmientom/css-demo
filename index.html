@@ -6,16 +6,36 @@
     <meta name="author" content="Patricia Sarmiento">
     <meta name="description" content="This is a basic html project to learn CSS">
     <title>CSS Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div class="wrapper">
     <header>
+        
         <h1>Nutella Brownies</h1>
-        <p>These moist, fudgy brownies started out as an impromptu experiment when I realized too late I was out of baking chocolate. Now it's one of my favorite brownie recipes! The Nutella® and Frangelico® give them a distinctly nutty flavor without interrupting the smooth texture. I love these brownies with cold milk or hot coffee.These moist, fudgy brownies started out as an impromptu experiment when I realized too late I was out of baking chocolate. Now it's one of my favorite brownie recipes! The Nutella® and Frangelico® give them a distinctly nutty flavor without interrupting the smooth texture. I love these brownies with cold milk or hot coffee.</p>
+        <nav>
+            <ul>
+                <li><a href="#section-1">Ingredients</a></li>
+                <li><a href="#section-2">Directions</a></li>
+                <li><a href="#section-3">Additional Information</a></li>
+                <li><a href="demo.html">Demo</a></li>
+            </ul>
+        </nav>
+        <img src="images/brownies3-sm.jpg" alt="">
+        <div class="gallery">
+            <img src="images/brownies1-sm.jpg" alt="">
+            <img src="images/brownies2-sm.jpg" alt="">
+            <!-- <img src="images/brownies3-sm.jpg" alt=""> -->
+        </div>
+        <p class="intro">These moist, fudgy brownies started out as an impromptu experiment when I realized too late I was out of baking chocolate. Now it's one of my favorite brownie recipes! The Nutella® and Frangelico® give them a distinctly nutty flavor without interrupting the smooth texture. I love these brownies with cold milk or hot coffee.These moist, fudgy brownies started out as an impromptu experiment when I realized too late I was out of baking chocolate. Now it's one of my favorite brownie recipes! The Nutella® and Frangelico® give them a distinctly nutty flavor without interrupting the smooth texture. I love these brownies with cold milk or hot coffee.</p>
     </header>
     <main>
         <!-- Ingredients  -->
-        <section>
+        
+        <section class="ingredients" id="section-1">
             <h2>Ingredients</h2>
             <ul>
                 <li>1½ cup butter</li>
@@ -32,11 +52,12 @@
             </ul>
         </section>
         <!-- Video -->
-         <section>
+         <section class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/HVnyzsa3LAE?si=u4oAjJroLZhOYZKP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
          </section>
          <!-- Directions -->
-          <section>
+          <section class="directions" id="section-2">
+
             <h2>Directions</h2>
             <div>
                 <h3>Step 1</h3>
@@ -60,7 +81,7 @@
             </div>
           </section>
           <!-- Prep and Facts  -->
-           <section>
+           <section class="information" id="section-3">
             <h2>Additional Information</h2>
             <div>
                 <table>
@@ -124,13 +145,14 @@
     </main>
     <footer>
         <address>
-            <p>Recipe by: <br>
-                2021 Allrecipes.com <br>
-                123 Main St. <br>
-                Miami, FL 33146<br>
+            <p>Recipe by: 
+                2021 Allrecipes.com  |
+                123 Main St.  |
+                Miami, FL 33146  |
                 <a href="https://www.allrecipes.com/recipe/239076/nutella-brownies/">Recipe Home</a>
                 </p>
         </address>
     </footer>
+</div>
 </body>
 </html>
